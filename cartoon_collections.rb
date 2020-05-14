@@ -28,6 +28,9 @@ def find_valid_calls(planeteer_calls)
   valid = valid_calls.each do |i|
         i
     end 
-  planeteer_calls.select {|i| i === valid}
+  planeteer_calls.select {|i| 
+  valid_calls.each do |el|
+        el === i
+    end }
   
 end
